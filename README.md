@@ -31,22 +31,24 @@ O projeto segue uma estrutura modular, usa **Marshmallow para validação**, **S
 
  🚀 Instalação e Execução
  1. Clonar o repositório
+    
 git clone https://github.com/esoj03/SD--work
+
 cd Trabalho_SD_25
 
- 2. Criar ambbiente virtual e instalar dependências
+ 3. Criar ambbiente virtual e instalar dependências
 python -m venv venv
 pip install -r requirements.txt
 
- 3. Configurar variáveis de ambiente
+ 4. Configurar variáveis de ambiente
 FLASK_APP=run.py
 FLASK_ENV=development
 DATABASE_URL=postgresql://usuario:senha@localhost:5432/livraria_db
 
-4. Criar a base de dados
+5. Criar a base de dados
 createdb livraria_db
 
-5. Criar as tabelas com Flask-Migrate
+6. Criar as tabelas com Flask-Migrate
 flask db init               # Apenas uma vez
 flask db migrate -m "init" # Gera scripts
 flask db upgrade            # Cria as tabelas no banco
