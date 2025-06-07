@@ -29,29 +29,6 @@ O projeto segue uma estrutura modular, usa **Marshmallow para validação**, **S
 
 ---
 
-📁 Estrutura do Projeto
-          Trabalho_SD_25/
-          ├── app/
-          │ ├── models/ # Modelos de dados (Book, Revista)
-          │ ├── schemas/ # Schemas de validação
-          │ ├── routes/ # Rotas organizadas por entidade
-          │ ├── extensions.py # Inicialização de extensões Flask
-          │ ├── config.py # Configuração da aplicação
-          │ └── init.py # App factory
-          │
-          ├── tests/ # Testes unitários organizados
-          │ ├── conftest.py # Setup para testes
-          │ ├── test_books.py
-          │ ├── test_revistas.py
-          │ └── test_stats.py
-          │
-          ├── migrations/ # Scripts gerados por Flask-Migrate
-          ├── .env # Variáveis de ambiente
-          ├── run.py # Entrada principal da aplicação
-          ├── requirements.txt # Lista de dependências
-          └── README.md # Este ficheiro
-
- 
  🚀 Instalação e Execução
  1. Clonar o repositório
 git clone https://github.com/esoj03/Trabalho_SD_25.git
