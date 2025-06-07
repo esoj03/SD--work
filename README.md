@@ -31,7 +31,7 @@ O projeto segue uma estrutura modular, usa **Marshmallow para validação**, **S
 
  🚀 Instalação e Execução
  1. Clonar o repositório
-git clone https://github.com/esoj03/Trabalho_SD_25.git
+git clone https://github.com/esoj03/SD--work
 cd Trabalho_SD_25
 
  2. Criar ambbiente virtual e instalar dependências
