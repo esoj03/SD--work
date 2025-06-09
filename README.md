@@ -37,7 +37,9 @@ O projeto segue uma estrutura modular, usa **Marshmallow para validação**, **S
   cd Trabalho_SD_25
 
  3. Criar ambbiente virtual e instalar dependências
+  
   python -m venv venv
+  
   pip install -r requirements.txt
 
  4. Configurar variáveis de ambiente
@@ -48,7 +50,10 @@ O projeto segue uma estrutura modular, usa **Marshmallow para validação**, **S
   
   DATABASE_URL=postgresql://usuario:senha@localhost:5432/livraria_db
 
-5. Criar a base de dados
+5. Criar a base de dados:
+
+  Uso do pgadmim/postgres para a criacao da base de dados 
+ 
   createdb livraria_db
 
 6. Criar as tabelas com Flask-Migrate
