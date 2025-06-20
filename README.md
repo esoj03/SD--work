@@ -1,22 +1,23 @@
-📚 API REST de Livros e Revistas – Sistemas Distribuídos 2024/2025
+# 📚 API REST de Livros e Revistas – Sistemas Distribuídos 2024/2025
 
-Este projeto consiste numa aplicação web construída com **Python (Flask)** e **PostgreSQL**, desenvolvida no âmbito da disciplina de **Sistemas Distribuídos**. A API permite o registo, consulta, atualização e remoção de livros e revistas, além de disponibilizar **estatísticas e filtros avançados**.
+## 📖 Sobre o Projeto
 
-O projeto segue uma estrutura modular, usa **Marshmallow para validação**, **SQLAlchemy como ORM**, e tem uma **pasta de testes com Pytest**.
+Esta é uma **API REST** desenvolvida para a disciplina de **Sistemas Distribuídos (2024/2025)**. Construída com **Python (Flask)** e **PostgreSQL**, a API permite o gerenciamento completo de **livros** e **revistas**, com suporte a **filtros avançados** e **estatísticas**.  
+A arquitetura do projeto é modular e organizada, utilizando **Marshmallow** para validação, **SQLAlchemy** como ORM e **Pytest** para testes automatizados.
 
 ---
 
-🧩 Funcionalidades Principais
+## ⚙️ Funcionalidades Principais
 
-- CRUD completo de livros (`/books`)
-- CRUD completo de revistas (`/revistas`)
+- CRUD completo para **livros** (`/books`)
+- CRUD completo para **revistas** (`/revistas`)
 - Filtros avançados e estatísticas (`/stats`)
-- Testes automatizados com Pytest
-- Migração de base de dados com Flask-Migrate
+- Testes automatizados com **Pytest**
+- Gerenciamento de migrações de banco de dados com **Flask-Migrate**
 
 ---
 
-⚙️ Tecnologias Utilizadas
+## 🧰 Tecnologias Utilizadas
 
 - Python 3.10+
 - Flask
@@ -29,45 +30,82 @@ O projeto segue uma estrutura modular, usa **Marshmallow para validação**, **S
 
 ---
 
- 🚀 Instalação e Execução
- 1. Clonar o repositório
-    
-  - git clone https://github.com/esoj03/SD--work
+## 🚀 Instalação e Execução
 
-  - cd Trabalho_SD_25
+### ✅ Pré-requisitos
 
- 3. Criar ambbiente virtual e instalar dependências
-  
-  - python -m venv venv
-  
-  - pip install -r requirements.txt
+- Python 3.10 ou superior
+- PostgreSQL instalado e em execução
+- pgAdmin (opcional, para interface gráfica do banco)
+- Git
 
- 4. Configurar variáveis de ambiente
-  
-  - FLASK_APP=run.py
-  
-  - FLASK_ENV=development
-  
-  - DATABASE_URL=postgresql://usuario:senha@localhost:5432/livraria_db
+### 📦 Passo a Passo Completo
 
-5. Criar a base de dados:
+#### 1. Clonar o Repositório
 
-  Uso do pgadmim/postgres para a criacao da base de dados 
- 
-  - createdb livraria_db
+```bash
+git clone https://github.com/esoj03/SD--work
+cd Trabalho_SD_25
+````
+#### 2. Criar Ambiente Virtual
+```bash
+python -m venv venv
+````
+#### 3. Ativar Ambiente Virtual
+   
+Linux/macOS:
+```bash
+source venv/bin/activate
+````
+Windows:
+```bash
+venv\Scripts\activate
+````
 
-6. Criar as tabelas com Flask-Migrate
+#### 4. Instalar Dependências
+```bash
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+````
 
-  - flask db init               # Apenas uma vez
+#### 5. Configurar Variáveis de Ambiente
+Crie um arquivo .env na raiz do projeto com o seguinte conteúdo (ou configure no terminal):
+```bash
+FLASK_APP=run.py
+FLASK_ENV=development
+DATABASE_URL=postgresql://Utilizador:senha@localhost:5432/nome_da_sua_base_de_dados
+````
+🔒 Substitua utilizador e senha pelas suas credenciais PostgreSQL .
 
-  - flask db migrate -m "init" # Gera scripts
+#### 6. Criar a Base de Dados
+Utilize o terminal ou pgAdmin para criar o banco:
+```bash
+createdb nome_da_sua_base_de_dados
+````
 
-  - flask db upgrade            # Cria as tabelas no banco
+#### 7. Inicializar Migrações
+```bash
+flask db init
+````
 
-▶️ Executar a Aplicação
+#### 8. Criar Scripts de Migração
+```bash
+flask db migrate -m "init"
+````
 
-  - Executar a API --> flask run
+#### 9. Aplicar Migrações
+```bash
+flask db upgrade
+````
 
-  - API estara rodando em --> http://127.0.0.1:5000
+#### 10. Executar a Aplicação
+```bash
+flask run
+````
 
-  - Teste das rotas de forma automatica --> pytest
+## 🧪 Executar Testes Automatizados
+Rode os testes utilizando o Pytest:
+````bash
+pytest
+````
+🧪 O ambiente de testes usa SQLite, isolando o banco principal.
