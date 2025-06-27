@@ -101,11 +101,14 @@ flask db upgrade
 ````
 
 #### 10. Executar a Aplicação
+Antes de iniciar o APP verifique que o (venv) esta ativado com o comando anterior(venv\Scripts\activate)
 ```bash
 flask run
 ````
 
 ## 🧪 Executar Testes Automatizados
+Esta é uma opcao para executar os testes das rotas automatizados, se toda a configuração for bem feita e as dependencias estiverem bem instaladas pode-se executar o comando abaixo e os testes serão corridos.
+vamos verificar no terminal pontos verdes se tudo estiver OK caso contrario irá verificar letras (F) em vermelho indicando que houve falhas.
 Rode os testes utilizando o Pytest:
 ````bash
 pytest
