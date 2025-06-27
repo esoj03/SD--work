@@ -82,10 +82,8 @@ DATABASE_URL=postgresql://Utilizador:senha@localhost:5432/nome_da_sua_base_de_da
 🔒 Substitua utilizador e senha pelas suas credenciais PostgreSQL .
 
 #### 6. Criar a Base de Dados
-Utilize o terminal ou pgAdmin para criar o banco:
-```bash
-createdb nome_da_sua_base_de_dados
-````
+É recomendado criar a base de dados de forma manual no pgAdmim devido ao fato da arquitetura do projeto que utiliza o postgres como base de dados.
+Utilize o terminal ou pgAdmin para criar a base de dados
 
 #### 7. Inicializar Migrações
 ```bash
