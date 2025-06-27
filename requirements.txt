@@ -1,8 +1,10 @@
 flask
 flask-sqlalchemy
 flask-migrate
-psycopg2-binary
 flask-cors
+python-dotenv
+psycopg2-binary
 marshmallow
 flask-marshmallow
-python-dotenv
+pytest
+pytest-flask
