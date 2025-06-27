@@ -66,9 +66,13 @@ venv\Scripts\activate
 ```bash
 python -m pip install --upgrade pip
 pip install -r requirements.txt
+pip install --upgrade marshmallow-sqlalchem
 ````
 
 #### 5. Configurar Variáveis de Ambiente
+Aviso: Nesta parte é necessario ter uma base de dados posgressql recomendamos instalar o postgresSQL juntamente com o PGadmin.
+Primeiro deve-se criar a base de dados e depois no ficheiro .env substituir os campos utilizador, senha e nome da sua base de dados pelos respetivos valores corretos. 
+
 Crie um arquivo .env na raiz do projeto com o seguinte conteúdo (ou configure no terminal):
 ```bash
 FLASK_APP=run.py
