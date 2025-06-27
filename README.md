@@ -66,7 +66,7 @@ venv\Scripts\activate
 ```bash
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-pip install --upgrade marshmallow-sqlalchem
+pip install --upgrade marshmallow-sqlalchemy
 ````
 
 #### 5. Configurar Variáveis de Ambiente
